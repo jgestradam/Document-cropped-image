@@ -11,6 +11,11 @@
 		5D373F57294387A1009B29B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D373F56294387A1009B29B2 /* ContentView.swift */; };
 		5D373F59294387A3009B29B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D373F58294387A3009B29B2 /* Assets.xcassets */; };
 		5D373F5C294387A3009B29B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D373F5B294387A3009B29B2 /* Preview Assets.xcassets */; };
+		5D373F6429438C02009B29B2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D373F6329438C02009B29B2 /* Home.swift */; };
+		5D373F682943904B009B29B2 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D373F672943904B009B29B2 /* ScanData.swift */; };
+		5D373F6A294394DE009B29B2 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D373F69294394DE009B29B2 /* ScannerView.swift */; };
+		5D373F6D2943982D009B29B2 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D373F6C2943982D009B29B2 /* TextRecognizer.swift */; };
+		5D4F3B4929442B4C00AA82CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F3B4829442B4C00AA82CF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		5D373F56294387A1009B29B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D373F58294387A3009B29B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D373F5B294387A3009B29B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D373F6329438C02009B29B2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5D373F672943904B009B29B2 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		5D373F69294394DE009B29B2 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		5D373F6C2943982D009B29B2 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		5D4F3B4829442B4C00AA82CF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +61,18 @@
 		5D373F53294387A1009B29B2 /* Document cropped image */ = {
 			isa = PBXGroup;
 			children = (
+				5D373F6B29439803009B29B2 /* Services */,
+				5D373F662943902A009B29B2 /* Models */,
+				5D373F6229438BEE009B29B2 /* Core */,
 				5D373F54294387A1009B29B2 /* Document_cropped_imageApp.swift */,
 				5D373F56294387A1009B29B2 /* ContentView.swift */,
 				5D373F58294387A3009B29B2 /* Assets.xcassets */,
 				5D373F5A294387A3009B29B2 /* Preview Content */,
+				5D4F3B4829442B4C00AA82CF /* LaunchScreen.storyboard */,
 			);
 			path = "Document cropped image";
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		5D373F5A294387A3009B29B2 /* Preview Content */ = {
 			isa = PBXGroup;
@@ -65,6 +80,39 @@
 				5D373F5B294387A3009B29B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D373F6229438BEE009B29B2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5D373F652943901A009B29B2 /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5D373F652943901A009B29B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D373F6329438C02009B29B2 /* Home.swift */,
+				5D373F69294394DE009B29B2 /* ScannerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D373F662943902A009B29B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D373F672943904B009B29B2 /* ScanData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D373F6B29439803009B29B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D373F6C2943982D009B29B2 /* TextRecognizer.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4F3B4929442B4C00AA82CF /* LaunchScreen.storyboard in Resources */,
 				5D373F5C294387A3009B29B2 /* Preview Assets.xcassets in Resources */,
 				5D373F59294387A3009B29B2 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D373F682943904B009B29B2 /* ScanData.swift in Sources */,
 				5D373F57294387A1009B29B2 /* ContentView.swift in Sources */,
+				5D373F6429438C02009B29B2 /* Home.swift in Sources */,
 				5D373F55294387A1009B29B2 /* Document_cropped_imageApp.swift in Sources */,
+				5D373F6D2943982D009B29B2 /* TextRecognizer.swift in Sources */,
+				5D373F6A294394DE009B29B2 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +323,14 @@
 				DEVELOPMENT_TEAM = 648GL97VZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Document cropped image requires permission to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +355,14 @@
 				DEVELOPMENT_TEAM = 648GL97VZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Document cropped image requires permission to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -11,7 +11,7 @@ import SwiftUI
 struct Document_cropped_imageApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }
